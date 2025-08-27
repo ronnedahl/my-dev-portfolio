@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    // Target modern browsers but compile to ES6 for compatibility
+    "target": "ES2015",
+    "module": "ES2015",
+    "lib": ["ES2015", "ES2017", "DOM", "DOM.Iterable"],
+    
+    // Strict type checking for better code quality
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    
+    // Additional checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    // Module resolution
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    
+    // Output configuration
+    "outDir": "./js/dist",
+    "rootDir": "./src/ts",
+    "sourceMap": true,
+    "removeComments": false, // Keep comments for documentation
+    "preserveConstEnums": true,
+    
+    // Emit helpers
+    "importHelpers": false,
+    "downlevelIteration": true,
+    
+    // Type acquisition
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": [
+    "src/ts/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "js/dist"
+  ]
+}
