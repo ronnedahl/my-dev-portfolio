@@ -111,6 +111,38 @@ nav {
     display: none;
 }
 
+/* Language Toggle Button */
+.language-toggle {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.language-toggle:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    transform: scale(1.05);
+}
+
+.language-toggle:active {
+    transform: scale(0.95);
+}
+
+.lang-text {
+    font-family: 'Roboto', sans-serif;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -572,6 +604,17 @@ footer {
 
     .btn-cv {
         display: inline-block;
+    }
+
+    .language-toggle {
+        position: absolute;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 0.85rem;
     }
 
     .nav-links {

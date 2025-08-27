@@ -21,11 +21,15 @@ node_modules/
 .env.production.local
 
 # build-folders
-
 dist/
 build/
 .next/
 out/
+
+# TypeScript build output
+js/dist/
+*.js.map
+*.d.ts
 
 # debug-logs
 npm-debug.log*
