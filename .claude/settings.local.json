@@ -9,7 +9,9 @@
       "Bash(npm install:*)",
       "Bash(ls:*)",
       "Bash(npx terser:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }
