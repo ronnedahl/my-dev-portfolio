@@ -17,7 +17,7 @@ const wrapperEnd = `
 
 // Read all compiled JS files from dist directory
 const distPath = path.join(__dirname, 'js', 'dist');
-const outputPath = path.join(__dirname, 'js', 'script.js');
+const outputPath = path.join(__dirname, 'js', 'app.js');
 
 // Function to get all JS files recursively
 function getJsFiles(dir) {
