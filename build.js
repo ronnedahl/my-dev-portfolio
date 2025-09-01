@@ -44,6 +44,7 @@ const fileOrder = [
   'translations/index.js',
   'modules/navigation.js',
   'modules/languageSwitcher.js',
+  'modules/contactForm.js',
   'main.js'
 ];
 

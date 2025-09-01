@@ -1,7 +1,3 @@
-/**
- * Translation module for internationalization
- * Provides all text content in English and Swedish
- */
 
 import { Translations } from '../types';
 
@@ -18,9 +14,9 @@ export const translations: Readonly<Translations> = {
     'lang-toggle-aria': 'Switch language',
     
     // Hero Section
-    'hero-line1': 'CRAFTING INTELLIGENT',
-    'hero-line2': 'SOLUTIONS WITH AI',
-    'hero-desc': 'Crafting intelligent solutions through code. Specialized in AI development, machine learning, and creating cutting-edge applications that push technology boundaries.',
+    'hero-line1': 'HAVING FUN WITH AI WHILE',
+    'hero-line2': 'BUILDING SMART SOLUTIONS',
+    'hero-desc': 'I love turning ideas into code – especially when AI is involved. From machine learning to smart apps, I\'m all about exploring, experimenting, and building things that push tech (and myself) a little further every day.',
     'hero-btn-projects': 'View AI Projects',
     'hero-btn-contact': 'Contact Me',
     'hero-btn-cv': 'Download CV',
@@ -36,15 +32,15 @@ export const translations: Readonly<Translations> = {
     'skills-title': 'Technical Skills',
     'skill-ml': 'Machine Learning',
     'skill-python': 'Python',
-    'skill-dataviz': 'Data Visualization',
+    'skill-dataviz': 'NPC Servers',
     'skill-nlp': 'Natural Language Processing',
-    'skill-cv': 'Computer Vision',
-    'skill-dl': 'Deep Learning (TensorFlow)',
+    'skill-cv': 'Hetzner Server',
+    'skill-dl': 'Claude Code',
     
     // Projects Section
     'projects-title': 'Featured Projects',
-    'project1-title': 'AI Assistant Platform',
-    'project1-desc': 'A conversational AI platform that understands and responds to user queries in natural language.',
+    'project1-title': 'Interactive Resume Chatbot',
+    'project1-desc': 'Tired of reading PDF files? Ask your questions about my experience, projects, or skills directly to this AI assistant. Built with RAG architecture to guarantee precise, fact-based answers straight from my CV.',
     'project2-title': 'Computer Vision System',
     'project2-desc': 'An advanced object detection and recognition system for persistent video streams. Built with high accuracy.',
     'project3-title': 'Predictive Analytics Tool',
@@ -78,9 +74,9 @@ export const translations: Readonly<Translations> = {
     'lang-toggle-aria': 'Byt språk',
     
     // Hero Section
-    'hero-line1': 'SKAPAR INTELLIGENTA',
-    'hero-line2': 'LÖSNINGAR MED AI',
-    'hero-desc': 'Skapar intelligenta lösningar genom kod. Specialiserad på AI-utveckling, maskininlärning och att skapa banbrytande applikationer som tänjder teknikens gränser.',
+    'hero-line1': 'HAR KUL MED AI MEDAN',
+    'hero-line2': 'JAG BYGGER SMARTA LÖSNINGAR',
+    'hero-desc': 'Jag älskar att förvandla idéer till kod – särskilt när AI är inblandat. Från maskininlärning till smarta appar handlar det för mig om att utforska, experimentera och bygga saker som driver tekniken (och mig själv) lite längre fram varje dag.',
     'hero-btn-projects': 'Visa AI-projekt',
     'hero-btn-contact': 'Kontakta mig',
     'hero-btn-cv': 'Ladda ner CV',
@@ -96,15 +92,15 @@ export const translations: Readonly<Translations> = {
     'skills-title': 'Tekniska färdigheter',
     'skill-ml': 'Maskininlärning',
     'skill-python': 'Python',
-    'skill-dataviz': 'Datavisualisering',
+    'skill-dataviz': 'NPC Servers',
     'skill-nlp': 'Naturlig språkbehandling',
-    'skill-cv': 'Datorseende',
-    'skill-dl': 'Djupinlärning (TensorFlow)',
+    'skill-cv': 'Hetzner Server',
+    'skill-dl': 'Claude Code',
     
     // Projects Section
     'projects-title': 'Utvalda projekt',
-    'project1-title': 'AI-assistentplattform',
-    'project1-desc': 'En konversations-AI-plattform som förstår och svarar på användarfrågor på naturligt språk.',
+    'project1-title': 'Interaktiv CV-Chatbot',
+    'project1-desc': 'Trött på att läsa PDF-filer? Ställ dina frågor om min erfarenhet, mina projekt eller kunskaper direkt till denna AI-assistent. Byggd med RAG-arkitektur för att garantera precisa, faktabaserade svar direkt från mitt CV.',
     'project2-title': 'Datorseendesystem',
     'project2-desc': 'Ett avancerat objektdetekterings- och igenkänningssystem för kontinuerliga videoströmmar. Byggt med hög precision.',
     'project3-title': 'Prediktivt analysverktyg',
