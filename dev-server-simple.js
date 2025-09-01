@@ -25,7 +25,7 @@ const initFileTracking = () => {
     const files = [
         './index.html',
         './css/style.css',
-        './js/script.js'
+        './js/app.js'
     ];
     
     files.forEach(file => {
