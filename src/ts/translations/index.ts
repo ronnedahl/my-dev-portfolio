@@ -16,7 +16,8 @@ export const translations: Readonly<Translations> = {
     // Hero Section
     'hero-line1': 'HAVING FUN WITH AI WHILE',
     'hero-line2': 'BUILDING SMART SOLUTIONS',
-    'hero-desc': 'I love turning ideas into code – especially when AI is involved. From machine learning to smart apps, I\'m all about exploring, experimenting, and building things that push tech (and myself) a little further every day.',
+    'hero-desc': 'I love turning ideas into code – especially when AI is involved. From machine learning to smart apps, I\'m all about exploring, experimenting, and building things that push tech (and myself) a little further every day.Launching live projects on my Hetzner server has shown me the thrill of bringing ideas into the real world – and every new challenge pushes both my skills and curiosity a little further each day.',
+    
     'hero-btn-projects': 'View AI Projects',
     'hero-btn-contact': 'Contact Me',
     'hero-btn-cv': 'Download CV',
@@ -76,7 +77,7 @@ export const translations: Readonly<Translations> = {
     // Hero Section
     'hero-line1': 'HAR KUL MED AI MEDAN',
     'hero-line2': 'JAG BYGGER SMARTA LÖSNINGAR',
-    'hero-desc': 'Jag älskar att förvandla idéer till kod – särskilt när AI är inblandat. Från maskininlärning till smarta appar handlar det för mig om att utforska, experimentera och bygga saker som driver tekniken (och mig själv) lite längre fram varje dag.',
+    'hero-desc': 'Jag älskar att förvandla idéer till kod – särskilt när AI är inblandat. Från maskininlärning till smarta appar handlar det för mig om att utforska, experimentera och bygga saker som driver tekniken (och mig själv) lite längre fram varje dag.Att lansera liveprojekt på min Hetzner-server har visat mig kicken i att förvandla idéer till verklighet – och varje ny utmaning driver både mina färdigheter och min nyfikenhet lite längre för varje dag.',
     'hero-btn-projects': 'Visa AI-projekt',
     'hero-btn-contact': 'Kontakta mig',
     'hero-btn-cv': 'Ladda ner CV',
