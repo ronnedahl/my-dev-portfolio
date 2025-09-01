@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing AI/ML development skills with a futuristic dark theme and multilingual support.
 
-## ✨ Features
+##  Features
 
 - **Responsive Design** - Mobile-first approach with optimized layouts for all devices
 - **Multilingual Support** - English/Swedish language switching with localStorage persistence
@@ -12,7 +12,7 @@ A modern, responsive portfolio website showcasing AI/ML development skills with 
 - **TypeScript Integration** - Type-safe development with modern ES2017+ features
 - **Performance Optimized** - Minimal bundle size and efficient loading
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **Frontend**: Vanilla TypeScript, HTML5, CSS3
 - **Build System**: Node.js with custom build scripts
@@ -20,7 +20,7 @@ A modern, responsive portfolio website showcasing AI/ML development skills with 
 - **Development**: Live reload server, TypeScript compiler
 - **Architecture**: Modular CSS, Component-based JavaScript
 
-## 📦 Project Structure
+##  Project Structure
 
 ```
 ├── css/
@@ -77,7 +77,7 @@ npm run build
 npm start
 ```
 
-## 📜 Available Scripts
+## Available Scripts
 
 ```bash
 npm run dev      # Start development server with live reload
@@ -87,7 +87,7 @@ npm run start    # Build and serve (production workflow)
 npm run clean    # Remove build artifacts
 ```
 
-## ⚙️ Configuration
+## ⚙Configuration
 
 ### EmailJS Setup
 
@@ -120,7 +120,7 @@ const config = {
 - Replace images in `assets/images/`
 - Modify project data in HTML or create dynamic loading
 
-## 🎨 Design System
+## Design System
 
 ### Color Palette
 ```css
@@ -186,7 +186,7 @@ npx tsc
 - Touch-friendly interactions
 - Optimized mobile navigation
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -194,7 +194,7 @@ npx tsc
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📱 Browser Support
+## Browser Support
 
 - Chrome 60+
 - Firefox 55+
@@ -205,7 +205,7 @@ npx tsc
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
+## Contact
 
 **Peter** - AI Developer & Machine Learning Engineer
 - Email: dev.peter.ai@gmail.com
@@ -216,4 +216,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ **Star this repository if you find it helpful!**
 
-Built with ❤️ using modern web technologies
+Built with  using modern web technologies
