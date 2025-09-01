@@ -1,0 +1,132 @@
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover { transform: translateY(-10px); }
+
+.project-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.project-tags span {
+    display: inline-block;
+    background-color: rgba(0, 255, 255, 0.1);
+    color: var(--accent-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 0 5px 5px 0;
+    font-size: 0.8rem;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-link, .btn-code {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-color);
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+.project-link i, .btn-code i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover, .btn-code:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
+    color: var(--bg-dark);
+}
+
+.project-link:hover i, .btn-code:hover i {
+    transform: translateX(5px);
+}
+
+.btn-code {
+    background-color: rgba(147, 51, 234, 0.1);
+    color: var(--accent-color);
+    border-color: #9333ea;
+}
+
+.btn-code:hover {
+    background-color: #9333ea;
+    box-shadow: 0 5px 15px rgba(147, 51, 234, 0.3);
+}
+
+/* Coming Soon Overlay */
+.project-card.coming-soon {
+    position: relative;
+    overflow: hidden;
+}
+
+.coming-soon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.9) 0%, rgba(147, 51, 234, 0.9) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.coming-soon-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bg-dark);
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.project-card.coming-soon .project-icon,
+.project-card.coming-soon h3,
+.project-card.coming-soon p,
+.project-card.coming-soon .project-tags {
+    opacity: 0.3;
+}
