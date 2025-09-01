@@ -24,7 +24,9 @@ exec('npm run build', (error, stdout, stderr) => {
     console.log(`\n🚀 Starting server on http://localhost:${PORT}\n`);
     
     const server = http.createServer((req, res) => {
-        let filePath = req.url === '/' ? '/index.html' : req.url;
+        // Remove query parameters from URL
+        let cleanUrl = req.url.split('?')[0];
+        let filePath = cleanUrl === '/' ? '/index.html' : cleanUrl;
         filePath = path.join(__dirname, filePath);
         
         const extname = path.extname(filePath);

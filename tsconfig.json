@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    // Target modern browsers but compile to ES6 for compatibility
-    "target": "ES2015",
+    // Target modern browsers with native async/await support
+    "target": "ES2017",
     "module": "ES2015",
     "lib": ["ES2015", "ES2017", "DOM", "DOM.Iterable"],
     
@@ -30,7 +30,7 @@
     "outDir": "./js/dist",
     "rootDir": "./src/ts",
     "sourceMap": true,
-    "removeComments": false, // Keep comments for documentation
+    "removeComments": true, // Remove comments to avoid bundling issues
     "preserveConstEnums": true,
     
     // Emit helpers

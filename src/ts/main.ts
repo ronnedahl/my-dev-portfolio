@@ -4,19 +4,22 @@
  */
 
 import { Navigation } from './modules/navigation';
-import { LanguageSwitcher } from './modules/languageSwitcher';
+import { ContactForm } from './modules/contactForm';
+// TEMPORARILY DISABLED FOR DEVELOPMENT - Uncomment when ready for production
+// import { LanguageSwitcher } from './modules/languageSwitcher';
 
-/**
- * Initialize the application
- */
 function initializeApp(): void {
   // Initialize navigation module
   const navigation = new Navigation();
   navigation.init();
 
-  // Initialize language switcher
-  const languageSwitcher = new LanguageSwitcher();
-  languageSwitcher.init();
+  // Language switcher disabled for development
+  // const languageSwitcher = new LanguageSwitcher();
+  // languageSwitcher.init();
+
+  // Initialize contact form
+  const contactForm = new ContactForm();
+  contactForm.init();
 
   // Log initialization for debugging
   console.log('Portfolio application initialized successfully');
