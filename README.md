@@ -51,7 +51,7 @@ A modern, responsive portfolio website showcasing AI/ML development skills with 
 └── package.json            # Dependencies & scripts
 ```
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -142,7 +142,7 @@ const config = {
 - **Tablet**: 768px - 992px  
 - **Mobile**: < 768px
 
-## 🔧 Development
+## Development
 
 ### TypeScript Development
 ```bash
@@ -165,7 +165,7 @@ npx tsc
 - **Image Optimization**: WebP format support and proper sizing
 - **Caching**: LocalStorage for language preferences and rate limiting
 
-## 🚦 Features Overview
+## Features Overview
 
 ### Multilingual Support
 - Automatic language detection
@@ -201,7 +201,7 @@ npx tsc
 - Safari 12+
 - Edge 79+
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
