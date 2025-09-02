@@ -4,102 +4,100 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a static HTML/CSS/JavaScript portfolio website with no build system or framework dependencies. The portfolio showcases AI/ML developer skills with a dark theme and cyan accent colors.
+A modern AI/ML developer portfolio website built with TypeScript and vanilla JavaScript. Features multilingual support (EN/SE), dark theme with cyan accents, and EmailJS contact form integration.
 
-## Common Development Tasks
+## Development Commands
 
-### TypeScript Development Setup
+### Development Commands
 ```bash
-# Install dependencies (first time only)
-npm install
-
-# Development mode - watch TypeScript files for changes
+# Development mode with live reload and auto-refresh
 npm run dev
 
-# Build TypeScript to JavaScript
+# Build modular ES6 architecture to JavaScript bundle
 npm run build
+
+# Build minified production version
+npm run build:min
+
+# Build legacy TypeScript version (if needed)
+npm run build:legacy
 
 # Clean build artifacts
 npm run clean
 
-# Start local server with built files
-npm run start
+# Production mode (build + serve)
+npm start
 ```
 
-### Running the Project (Production)
+### Local Testing
 ```bash
-# The compiled JavaScript is already in js/script.js
-# Option 1: Open index.html directly
-# Option 2: Use a local server (recommended)
-python -m http.server 8000
-# or
-npx serve .
-```
+# Serve with Python (port 8000)
+npm run serve
 
-### File Modifications
-- **TypeScript Development**: Edit files in `src/ts/` directory
-  - `src/ts/types/`: Type definitions and interfaces
-  - `src/ts/translations/`: Language translations
-  - `src/ts/modules/`: Feature modules (navigation, language switcher)
-  - `src/ts/main.ts`: Application entry point
-- **Content Updates**: Edit `index.html` for structure changes
-- **Styling**: All styles in `css/style.css` using CSS custom properties
-- **Production JavaScript**: `js/script.js` (auto-generated from TypeScript)
+# Direct file access (limited functionality without server)
+open index.html
+```
 
 ## Architecture
 
-### TypeScript Module Structure
-The project uses a modular TypeScript architecture compiled to vanilla JavaScript:
-- **Type Safety**: Strict TypeScript configuration with comprehensive type definitions
-- **Module Pattern**: Each feature is encapsulated in its own module
-- **Separation of Concerns**: Clear separation between types, translations, and functionality
-- **Build Process**: TypeScript compiles to a single JavaScript file for production
+### Build System
+- **Modern ES6 Bundler**: `build-modern.js` bundles modular JavaScript into single `js/app.js`
+- **Module Order**: Storage → Translations → Navigation → LanguageSwitcher → ContactForm
+- **Development Server**: `dev-server-simple.js` with TypeScript watch mode and auto-refresh
+- **Legacy Support**: `build:legacy` for TypeScript compilation if needed
 
-### CSS Design System
-The project uses CSS custom properties defined in `:root` for consistent theming:
-- Primary gradient: `linear-gradient(135deg, #667eea 0%, #764ba2 100%)`
-- Accent color: `#00ffff` (cyan)
-- Dark backgrounds with high contrast text
-- Responsive breakpoints: 992px (tablet) and 768px (mobile)
+### Modular Architecture
+```
+js/modules/
+├── Storage.js           # Centralized localStorage management
+├── Translations.js      # Multilingual content
+├── Navigation.js        # Responsive navigation & scroll behavior
+├── LanguageSwitcher.js  # Language toggle functionality
+└── ContactForm.js       # Form validation & EmailJS integration
 
-### JavaScript/TypeScript Patterns
-- **Class-based Modules**: Navigation and LanguageSwitcher as classes
-- **Type-safe Translations**: Compile-time checking for translation keys
-- **Encapsulation**: Private methods and properties for internal logic
-- **Error Handling**: Graceful degradation with console warnings
+js/
+├── app-modular.js       # Source application controller
+└── app.js              # Production bundle (auto-generated)
+```
 
-### Image Assets
-- Profile image: `assets/images/me-profile.png`
-- Hero illustration: `assets/images/robot.png`
-- No image optimization or lazy loading implemented
+### CSS Architecture
+Modular CSS system with imports:
+- `css/style.css` - Main entry point importing all modules
+- `css/modules/` - Component-specific styles
+- CSS Custom Properties in `:root` for theming
+- Responsive breakpoints: 768px (mobile), 992px (tablet)
 
-## Key Implementation Notes
+### Key Technologies
+- **EmailJS**: Contact form backend (requires configuration)
+- **LocalStorage**: Language preference persistence and rate limiting
+- **Font Awesome 6.4.0**: Icons (CDN)
+- **Google Fonts**: Roboto (CDN)
 
-1. **Language Mismatch**: HTML lang attribute is "sv" (Swedish) but content is in English - should be updated to "en"
+## Important Notes
 
-2. **Placeholder Content**: 
-   - CV download links to non-existent `ditt-cv.pdf`
-   - Project links are all `href="#"`
-   - Contact form has no backend
+### Current State
+- Language switcher temporarily disabled in `main.ts` (lines 8-9, 16-18)
+- Placeholder content: CV link (`ditt-cv.pdf`), project links (`href="#"`)
+- HTML lang attribute is "sv" but content is English
 
-3. **Mobile Menu**: Toggle functionality exists but header scroll effect is incomplete (line 19-26 in script.js)
+### EmailJS Configuration
+Update in contact form module:
+```javascript
+const config = {
+  serviceId: 'your_service_id',
+  templateId: 'your_template_id',
+  publicKey: 'your_public_key'
+};
+```
 
-4. **External Dependencies**:
-   - Font Awesome 6.4.0 (CDN)
-   - Google Fonts: Roboto (CDN)
+### Security Features
+- Input sanitization for XSS prevention
+- Rate limiting (3 messages/minute)
+- Spam detection patterns
+- Client-side validation
 
-5. **Missing Features**:
-   - No SEO meta tags
-   - No Open Graph tags
-   - No favicon
-   - No error pages
-   - No analytics
-
-## Development Considerations
-
-When modifying this portfolio:
-- Maintain the existing CSS variable system for consistent theming
-- Keep the simple vanilla JavaScript approach unless adding complex features
-- Test responsive design at 768px and 992px breakpoints
-- Ensure smooth scroll behavior is preserved when adding new sections
-- Update placeholder content with actual project details and working links
+### Performance Optimizations
+- Minimal bundle size through custom build
+- No framework dependencies
+- CSS modules for efficient loading
+- LocalStorage caching for preferences

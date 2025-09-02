@@ -5,10 +5,12 @@
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server-simple.js",
-    "build": "tsc && node build.js",
-    "build:min": "npx terser js/app.js -c -m -o js/app.min.js",
-    "clean": "rimraf js/dist",
-    "serve": "python -m http.server 8080",
+    "build": "node build-split.js",
+    "build:bundle": "node build-modern.js",
+    "build:legacy": "tsc && node build.js",
+    "build:min": "npm run build:bundle && npx terser js/app.js -c -m -o js/app.min.js",
+    "clean": "rimraf js/dist js/app.js js/app.min.js js/bundles",
+    "serve": "python3 -m http.server 8000",
     "start": "npm run build && npm run serve"
   },
   "keywords": [

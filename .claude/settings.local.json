@@ -11,7 +11,9 @@
       "Bash(npx terser:*)",
       "Bash(cp:*)",
       "Bash(rm:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(pkill:*)",
+      "Bash(node build-split.js)"
     ],
     "deny": []
   }
