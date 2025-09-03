@@ -34,6 +34,7 @@
     .hero-text .line1, .hero-text .line2 {
         font-size: 22px;
         line-height: 1.2;
+        font-weight: bold;
     }
 
     .hero-text .line2 { margin-bottom: 2rem; }
@@ -55,6 +56,11 @@
         width: 100%;
         gap: 1rem;
         margin-top: 2rem;
+    }
+    
+    /* Show mobile CV button in mobile view */
+    .btn-mobile-cv {
+        display: inline-flex;
     }
 
     .hero .btn {
@@ -107,5 +113,23 @@
 
     .hamburger.toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    position: relative;
+}
+    .about-text p,
+    .hero-text p {
+    font-size: 0.9rem;  
+}
+    .about-text h3{
+        font-size:1.6rem;
+    }
+
+    .contact-info h3{
+        font-size:1.5rem;
     }
 }
