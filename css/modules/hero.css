@@ -38,6 +38,8 @@
     width: 55%;
     transform: translateY(10%) scale(1.4);
     z-index: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Mjuk skugga */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-image img {
