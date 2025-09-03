@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVGFHQWE11"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RVGFHQWE11');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Coder Portfolio</title>
     <link rel="stylesheet" href="./css/style.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Performance monitoring -->
     <script>
         window.bundleLoadTimes = {};
         window.bundleLoadTimes.start = performance.now();
     </script>
 </head>
+
 <body>
 
     <!-- Navigation -->
     <header>
         <nav>
             <a href="#" class="logo">&lt;/> PETER.DEV</a>
-            
+
             <ul class="nav-links">
                 <li><a href="#hero" data-translate="nav-home">Home</a></li>
                 <li><a href="#about" data-translate="nav-about">About</a></li>
@@ -27,13 +40,13 @@
                 <li><a href="#projects" data-translate="nav-projects">Projects</a></li>
                 <li><a href="#contact" data-translate="nav-contact">Contact</a></li>
             </ul>
-            
+
             <button class="language-toggle" id="languageToggle" aria-label="Switch language">
                 <span class="lang-text">EN</span>
             </button>
-            
+
             <a href="./assets/cv-peter.pdf" class="btn btn-nav-cv" download data-translate="nav-cv">Download CV</a>
-            
+
             <div class="hamburger">
                 <div></div>
                 <div></div>
@@ -47,11 +60,14 @@
         <div class="hero-text">
             <span class="line1" data-translate="hero-line1">HAVING FUN WITH AI WHILE</span>
             <span class="line2" data-translate="hero-line2">BUILDING SMART SOLUTIONS</span>
-            <p data-translate="hero-desc">I love turning ideas into code – especially when AI is involved. From machine learning to smart apps, I'm all about exploring, experimenting, and building things that push tech (and myself) a little further every day.</p>
+            <p data-translate="hero-desc">I love turning ideas into code – especially when AI is involved. From machine
+                learning to smart apps, I'm all about exploring, experimenting, and building things that push tech (and
+                myself) a little further every day.</p>
             <div class="hero-buttons">
                 <a href="https://cv.peterbot.dev" class="btn btn-primary" target="_blank">Try My CV-Bot</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                <a href="./assets/cv-peter.pdf" class="btn btn-secondary btn-mobile-cv" download data-translate="nav-cv">Download CV</a>
+                <a href="./assets/cv-peter.pdf" class="btn btn-secondary btn-mobile-cv" download
+                    data-translate="nav-cv">Download CV</a>
             </div>
         </div>
         <div class="hero-image">
@@ -65,12 +81,21 @@
         <div class="about-content">
             <div class="about-text">
                 <h3 data-translate="about-subtitle">AI Developer & Machine Learning Engineer</h3>
-                <p data-translate="about-p1">My journey into the world of AI is rooted in two years of full-time studies in web development, which gave me a deep understanding of what constitutes high-quality and sustainable code. This foundation is essential for my work today, where I combine traditional engineering practices with a modern, AI-assisted workflow.</p>
-                <p data-translate="about-p2">For me, TypeScript is not a choice but a standard for building robust applications and catching errors before they reach the user. I always design my solutions with a modular architecture, making the code reusable, easy to test, and simple to scale. My philosophy is to write code that not only works today but is also easy for the entire team to maintain and debug in the future.</p>
-                <p data-translate="about-p3">By using tools such as Gemini CLI and Claude, I can accelerate development, but it is my knowledge of these core principles that ensures the outcome is a professional and long-term sustainable product.</p>
+                <p data-translate="about-p1">My journey into the world of AI is rooted in two years of full-time studies
+                    in web development, which gave me a deep understanding of what constitutes high-quality and
+                    sustainable code. This foundation is essential for my work today, where I combine traditional
+                    engineering practices with a modern, AI-assisted workflow.</p>
+                <p data-translate="about-p2">For me, TypeScript is not a choice but a standard for building robust
+                    applications and catching errors before they reach the user. I always design my solutions with a
+                    modular architecture, making the code reusable, easy to test, and simple to scale. My philosophy is
+                    to write code that not only works today but is also easy for the entire team to maintain and debug
+                    in the future.</p>
+                <p data-translate="about-p3">By using tools such as Gemini CLI and Claude, I can accelerate development,
+                    but it is my knowledge of these core principles that ensures the outcome is a professional and
+                    long-term sustainable product.</p>
             </div>
             <div class="about-image">
-                <img src="./assets/images/me-profile.png" alt="Peter - AI Developer">
+                <img src="./assets/images/profile-picture-smile.jpeg" alt="Peter - AI Developer">
             </div>
         </div>
     </section>
@@ -81,35 +106,54 @@
         <div class="skills-container">
             <div class="skill">
                 <div class="skill-info"><span data-translate="skill-ml">Machine Learning</span> <span>85%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
             </div>
             <div class="skill">
                 <div class="skill-info"><span data-translate="skill-python">Python</span> <span>90%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
             </div>
             <div class="skill">
                 <div class="skill-info"><span data-translate="skill-dataviz">NPC Servers</span> <span>75%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
             </div>
             <div class="skill">
-                <div class="skill-info"><span data-translate="skill-nlp">Natural Language Processing</span> <span>80%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                <div class="skill-info"><span data-translate="skill-nlp">Natural Language Processing</span>
+                    <span>80%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
             </div>
             <div class="skill">
                 <div class="skill-info"><span data-translate="skill-cv">Hetzner Server</span> <span>85%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
             </div>
             <div class="skill">
-                <div class="skill-info"><span data-translate="skill-deployment">Deployment (Hetzner / Serverless)</span> <span>81%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 81%;"></div></div>
+                <div class="skill-info"><span data-translate="skill-deployment">Deployment (Hetzner / Serverless)</span>
+                    <span>81%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 81%;"></div>
+                </div>
             </div>
             <div class="skill">
                 <div class="skill-info"><span data-translate="skill-dl">Claude Code</span> <span>81%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 81%;"></div></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 81%;"></div>
+                </div>
             </div>
             <div class="skill">
-                <div class="skill-info"><span data-translate="skill-vector">Vector Databases</span> <span>61%</span></div>
-                <div class="skill-bar"><div class="skill-level" style="width: 61%;"></div></div>
+                <div class="skill-info"><span data-translate="skill-vector">Vector Databases</span> <span>61%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 61%;"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -123,10 +167,14 @@
                     <i class="fas fa-robot"></i>
                 </div>
                 <h3 data-translate="project1-title">Interactive Resume Chatbot</h3>
-                <p data-translate="project1-desc">Tired of reading PDF files? Ask your questions about my experience, projects, or skills directly to this AI assistant. Built with RAG architecture to guarantee precise, fact-based answers straight from my CV.</p>
+                <p data-translate="project1-desc">Tired of reading PDF files? Ask your questions about my experience,
+                    projects, or skills directly to this AI assistant. Built with RAG architecture to guarantee precise,
+                    fact-based answers straight from my CV.</p>
                 <div class="project-buttons">
-                    <a href="https://cv.peterbot.dev" class="project-link" target="_blank" data-translate="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
-                    <a href="https://github.com/ronnedahl/my-dev-portfolio-chatbot" class="btn-code" target="_blank" data-translate="project-code">View Code <i class="fas fa-code"></i></a>
+                    <a href="https://cv.peterbot.dev" class="project-link" target="_blank"
+                        data-translate="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/ronnedahl/my-dev-portfolio-chatbot" class="btn-code" target="_blank"
+                        data-translate="project-code">View Code <i class="fas fa-code"></i></a>
                 </div>
             </div>
             <div class="project-card coming-soon">
@@ -134,9 +182,11 @@
                     <i class="fas fa-eye"></i>
                 </div>
                 <h3 data-translate="project2-title">Computer Vision System</h3>
-                <p data-translate="project2-desc">An advanced object detection and recognition system for persistent video streams. Built with high accuracy.</p>
+                <p data-translate="project2-desc">An advanced object detection and recognition system for persistent
+                    video streams. Built with high accuracy.</p>
                 <div class="project-buttons">
-                    <a href="#" class="project-link" data-translate="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="project-link" data-translate="project-link">View Live Project <i
+                            class="fas fa-external-link-alt"></i></a>
                     <a href="#" class="btn-code" data-translate="project-code">View Code <i class="fas fa-code"></i></a>
                 </div>
                 <div class="coming-soon-overlay">
@@ -148,9 +198,11 @@
                     <i class="fas fa-chart-line"></i>
                 </div>
                 <h3 data-translate="project3-title">Predictive Analytics Tool</h3>
-                <p data-translate="project3-desc">A machine learning-based tool that provides sales forecasts and identifies potential market trends.</p>
+                <p data-translate="project3-desc">A machine learning-based tool that provides sales forecasts and
+                    identifies potential market trends.</p>
                 <div class="project-buttons">
-                    <a href="#" class="project-link" data-translate="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="project-link" data-translate="project-link">View Live Project <i
+                            class="fas fa-external-link-alt"></i></a>
                     <a href="#" class="btn-code" data-translate="project-code">View Code <i class="fas fa-code"></i></a>
                 </div>
                 <div class="coming-soon-overlay">
@@ -166,7 +218,8 @@
         <div class="contact-container">
             <div class="contact-info">
                 <h3 data-translate="contact-subtitle">Let's Connect</h3>
-                <p data-translate="contact-desc">I'm always open to discussing new projects, creative ideas or opportunities. Feel free to reach out using the form or through my contact details.</p>
+                <p data-translate="contact-desc">I'm always open to discussing new projects, creative ideas or
+                    opportunities. Feel free to reach out using the form or through my contact details.</p>
                 <ul>
                     <li>
                         <i class="fas fa-envelope"></i>
@@ -193,7 +246,8 @@
                 </div>
                 <div class="form-group">
                     <label for="message" data-translate="form-message">Message</label>
-                    <textarea id="message" data-translate="form-message" placeholder="Message" rows="5" required></textarea>
+                    <textarea id="message" data-translate="form-message" placeholder="Message" rows="5"
+                        required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" data-translate="form-submit">Send Message</button>
             </form>
@@ -212,12 +266,13 @@
 
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
+
     <!-- Load core bundle (5.1KB) immediately -->
     <script src="./js/bundles/core.js"></script>
-    
+
     <!-- Load lazy loader to handle on-demand loading -->
     <script src="./js/bundles/lazy-loader.js"></script>
 
 </body>
+
 </html>

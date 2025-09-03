@@ -129,6 +129,26 @@
         font-size:1.6rem;
     }
 
+     .about-content {
+        flex-direction: column; /* Ändra till vertikal layout */
+        align-items: center;    /* Centrera horisontellt */
+        gap: 30px;             /* Minska gapet för mobil */
+    }
+    
+    /* Reduce about image height by 30% on mobile */
+    .about-image {
+        height: 380px;  /* 30% less than 400px */
+        min-width: 390px;  /* Keep original width */
+       
+        flex: none;
+       
+    }
+
+    .about-image img {
+       position: relative;
+      
+    }
+
     .contact-info h3{
         font-size:1.5rem;
     }
