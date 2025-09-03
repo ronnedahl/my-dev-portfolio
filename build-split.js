@@ -58,6 +58,9 @@ function createBundles() {
   const languageSwitcher = new LanguageSwitcher();
   languageSwitcher.init();
   
+  // Expose Storage globally for other bundles
+  window.Storage = Storage;
+  
   console.log('Core bundle loaded');
 })();
 `;
@@ -79,6 +82,9 @@ console.log('Language bundle loaded (functionality in core bundle)');
  */
 (function() {
   'use strict';
+
+  // Import Storage from global scope (set by core bundle)
+  const Storage = window.Storage;
 
   ${processModule(path.join(config.moduleDir, 'ContactForm.js'))}
 

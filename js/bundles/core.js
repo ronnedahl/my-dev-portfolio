@@ -503,5 +503,8 @@ class Navigation {
   const languageSwitcher = new LanguageSwitcher();
   languageSwitcher.init();
   
+  // Expose Storage globally for other bundles
+  window.Storage = Storage;
+  
   console.log('Core bundle loaded');
 })();
