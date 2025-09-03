@@ -6,6 +6,9 @@
 (function() {
   'use strict';
 
+  // Import Storage from global scope (set by core bundle)
+  const Storage = window.Storage;
+
   /**
  * ContactForm Module - Secure email form with validation and rate limiting
  * Features: XSS protection, spam detection, rate limiting, real-time validation
